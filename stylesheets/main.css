@@ -1,12 +1,15 @@
 /* 
   Styles anything within the body tags
 
-  background-color: #f2e8df; sets the background color of the webpage to a light beige
+  background-color: #f2e8df; sets the background color of the webpage to a 
+  light beige
 
-  margin: 0; gets rid of the outside margin, allowing the content to spread across the entire webpage
+  margin: 0; gets rid of the outside margin, allowing the content to spread 
+  across the entire webpage
 
-  font-family: Geneva, Tahoma, sans-serif; sets the font to Geveva. If Geneva cannot be used, Tahoma 
-  is used. If Tahoma cannot be used, the default sans-serif font built into the browser is used.
+  font-family: Geneva, Tahoma, sans-serif; sets the font to Geveva. If 
+  Geneva cannot be used, Tahoma is used. If Tahoma cannot be used, the 
+  default sans-serif font built into the browser is used.
 */
 body {
   background-color: #f2e8df;
@@ -35,8 +38,8 @@ header {
 
   padding: 0; makes the space between the content and the border smaller
 
-  overflow: hidden; clips any content that overflows the element's box. This
-  gives it the rectangle surrounding the list items/navigation tabs
+  overflow: hidden; clips any content that overflows the element's box. 
+  This gives it the rectangle surrounding the list items/navigation tabs
 
   background-color: #d98673; makes the bar a rosy color  
 */
@@ -50,13 +53,24 @@ header ul {
 /*
   Styles anything within the li tags within the header tags
 
-  float: left; makes all of the navigation tabs go to the left, instead of being 
-  centered
+  float: left; makes all of the navigation tabs go to the left, instead of 
+  being centered
 */
 header li {
   float: left;
 }
 
+/*
+  Styles anything within the a tags within the li tags within the header tags
+
+  display: block; displays elements as block elements
+
+  color: #6e4d45; sets the font color to a dark brown
+
+  padding: 16px; makes the space between the content and the border larger
+
+  text-decoration: none; gets rid of the underline on the anchor tags
+*/
 header li a {
   display: block;
   color: #6e4d45;
@@ -64,16 +78,44 @@ header li a {
   text-decoration: none;
 }
 
+/*
+  Styles anything within the a tags within the li tags within the header tags
+
+  When the mouse hovers over an achor tag,
+
+  background-color: #d67964; sets the background color to a darker pink/rose
+
+  text-decoration: underline; puts an underline under the texts
+*/
 header li a:hover {
   background-color: #d67964;
   text-decoration: underline;
 }
 
+/*
+  Styles anything within the main tags
+
+  margin: 8px; makes the space between the content and the edge of the
+  webpage larger
+
+  color: #6e4d45; sets the font color to a dark brown
+*/
 main {
   margin: 8px;
   color: #6e4d45;
 }
 
+/*
+  Styles anything with an id of "nations"
+
+  padding-left: 20px; makes the space between the content and the border larger
+
+  padding-top: 1px; makes the space between the content and the border larger
+
+  padding-bottom: 1px; makes the space between the content and the border larger
+
+  background-color: #e7d4c3; sets the background color to a darker beige
+*/
 #nations {
   padding-left: 20px;
   padding-top: 1px;
@@ -81,6 +123,17 @@ main {
   background-color: #e7d4c3;
 }
 
+/*
+  Styles anything within the footer tags within the body tags
+
+  padding-left: 20px; makes the space between the content and the border larger
+
+  padding-bottom: 20px; makes the space between the content and the border larger
+
+  padding-top: 1px; makes the space between the content and the border larger
+
+  background-color: #e9ac9f; sets the background color to a lighter pink/rose than the nav bar
+*/
 body footer {
   padding-left: 20px;
   padding-bottom: 20px;
@@ -88,6 +141,11 @@ body footer {
   background-color: #e9ac9f;
 }
 
+/*
+  Styles anything within the anchor tags
+
+  color: #8d5c50; sets the font color to a dark brown
+*/
 a {
   color: #8d5c50;
 }
