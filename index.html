@@ -1,0 +1,90 @@
+<!--
+• Name: Jessie Linsangan
+• Course: Software Development 20S
+• Teacher: Mr. Hardman
+• School: Pembina Trails Early College
+• Date Last Modified: 11/09/2022
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treaty 1</title>
+    <!-- Link that allows the webpage to be styled with the external stylesheet -->
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <!-- Internal stylesheet for styling that is specific to one webpage -->
+    <style>
+      /* Inverts the colors on pictures with the "inverted" class */
+      .inverted {
+        filter: invert();
+      }
+
+      /* span that makes anything with it bolded and italicized */
+      span {
+        font-weight: bold;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Treaty 1</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home Page</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>About Treaty 1</h2>
+      <p>
+        At Lower Fort Garry, Treaty No. 1 was negotiated and signed in August
+        1871. The seven First Nations that signed the first of the numbered
+        Treaties make up the Treaty One Nation.They are Anishinaabe (Ojibwe) and
+        Nehiyaw (Cree).
+      </p>
+
+      <h2>Treaty Maps</h2>
+      <img
+        src="images/1200px-Numbered-Treaties-Map.png"
+        width="40%"
+        alt="An image of a map of Canada, with shaded sections signifying the Treaty areas"
+      />
+      <img
+        src="images/Treaty_1_Territory.png"
+        width="27.5%"
+        class="inverted"
+        alt="An image of a map of Canada, zoomed into the lower area of Manitoba, partially 
+          shaded to signify the Treaty 1 area"
+      />
+
+      <br />
+      <br />
+
+      <div id="nations">
+        <h2>Nations Involved</h2>
+        <ul>
+          <li><span>Peguis</span> First Nation</li>
+          <li><span>Sagkeeng</span> First Nation</li>
+          <li><span>Brokenhead Ojibway</span> Nation</li>
+          <li><span>Roseau River Anishinaabe</span> First Nation</li>
+          <li><span>Long Plain</span> First Nation</li>
+          <li><span>Sandy Bay Ojibway</span> First Nation</li>
+          <li><span>Swan Lake</span> First Nation</li>
+        </ul>
+      </div>
+
+      <br />
+
+      <footer>
+        <h3>Sources</h3>
+        <a href="https://treaty1.ca/">Treaty 1's Official Website</a>
+      </footer>
+    </main>
+  </body>
+</html>

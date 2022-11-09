@@ -1,0 +1,93 @@
+/* 
+  Styles anything within the body tags
+
+  background-color: #f2e8df; sets the background color of the webpage to a light beige
+
+  margin: 0; gets rid of the outside margin, allowing the content to spread across the entire webpage
+
+  font-family: Geneva, Tahoma, sans-serif; sets the font to Geveva. If Geneva cannot be used, Tahoma 
+  is used. If Tahoma cannot be used, the default sans-serif font built into the browser is used.
+*/
+body {
+  background-color: #f2e8df;
+  margin: 0;
+  font-family: Geneva, Tahoma, sans-serif;
+}
+
+/*
+  Styles anything within the header tags
+
+  padding: 0; makes the space between the content and the border smaller
+
+  text-align: center; makes any text centered on the webpage
+
+  color: #6e4d45; sets the font color to a dark brown
+*/
+header {
+  padding: 0;
+  text-align: center;
+  color: #6e4d45;
+}
+/*
+  Styles anything within the ul tags within the header tags
+
+  list-style-type: none; gets rid of the bullet points on the list items
+
+  padding: 0; makes the space between the content and the border smaller
+
+  overflow: hidden; clips any content that overflows the element's box. This
+  gives it the rectangle surrounding the list items/navigation tabs
+
+  background-color: #d98673; makes the bar a rosy color  
+*/
+header ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d98673;
+}
+
+/*
+  Styles anything within the li tags within the header tags
+
+  float: left; makes all of the navigation tabs go to the left, instead of being 
+  centered
+*/
+header li {
+  float: left;
+}
+
+header li a {
+  display: block;
+  color: #6e4d45;
+  padding: 16px;
+  text-decoration: none;
+}
+
+header li a:hover {
+  background-color: #d67964;
+  text-decoration: underline;
+}
+
+main {
+  margin: 8px;
+  color: #6e4d45;
+}
+
+#nations {
+  padding-left: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: #e7d4c3;
+}
+
+body footer {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 1px;
+  background-color: #e9ac9f;
+}
+
+a {
+  color: #8d5c50;
+}
