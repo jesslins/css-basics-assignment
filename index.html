@@ -3,7 +3,7 @@
 • Course: Software Development 20S
 • Teacher: Mr. Hardman
 • School: Pembina Trails Early College
-• Date Last Modified: 11/09/2022
+• Date Last Modified: 11/10/2022
 -->
 
 <!DOCTYPE html>
@@ -13,16 +13,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treaty 1</title>
-    <!-- Link that allows the webpage to be styled with the external stylesheet -->
+    <!-- Link that allows the webpage to be styled with the external stylesheet. -->
     <link rel="stylesheet" href="stylesheets/main.css" />
-    <!-- Internal stylesheet for styling that is specific to this webpage -->
+    <!-- Internal stylesheet for styling that is specific to this webpage. -->
     <style>
-      /* Inverts the colors on pictures with the "inverted" class */
+      /* Inverts the colors on pictures with the "inverted" class. */
       .inverted {
         filter: invert();
       }
 
-      /* span that makes anything with it bolded and italicized */
+      /* span that makes anything with it bolded and italicized. */
       span {
         font-weight: bold;
         font-style: italic;
@@ -30,19 +30,17 @@
     </style>
   </head>
   <body>
-    <!--
-      The header tags contain the main heading and the navigation bar
-    -->
+    <!-- The header tags contain the main heading and the navigation bar. -->
     <header>
       <h1>Treaty 1</h1>
-      <!--Navigation bar to navigate to every webpage of my site-->
+      <!-- Navigation bar to navigate to every webpage of my site. -->
       <nav>
         <!--
           Using an unordered list to list all of my anchor tags/navigation 
-          tabs
+          tabs.
         -->
         <ul>
-          <!--Anchor tag for the home page-->
+          <!-- Anchor tag for the home page. -->
           <li>
             <a href="index.html">Home Page</a>
           </li>
@@ -52,15 +50,15 @@
     <!--
       The main tags contain the main content of the website, in this case,
       it contains my headings and paragraphs introducing Treaty 1 and giving
-      base knowledge on it
+      base knowledge on it.
     -->
     <main>
       <!--
         Heading for the paragraph where I give an overview on the history of
-        Treaty 1
+        Treaty 1.
       -->
       <h2>About Treaty 1</h2>
-      <!--Paragraph giving an overview on the history of Treaty 1-->
+      <!-- Paragraph giving an overview on the history of Treaty 1. -->
       <p>
         At Lower Fort Garry, Treaty No. 1 was negotiated and signed in August
         1871. The seven First Nations that signed the first of the numbered
@@ -68,9 +66,7 @@
         Nehiyaw (Cree).
       </p>
 
-      <!--
-        Heading for the two maps that show Treaty areas
-      -->
+      <!-- Heading for the two maps that show Treaty areas. -->
       <h2>Treaty Maps</h2>
       <img
         src="images/1200px-Numbered-Treaties-Map.png"
@@ -88,11 +84,21 @@
       <br />
       <br />
 
-      <!-- These div tags contain the heading for a list, and a list that shows the different nations in this Treaty -->
+      <!--
+        These div tags contain the heading for a list, and a list that shows the different nations in this Treaty.
+
+        They should really be section tags, but div was a requirement in this assignment, and I had no other place to put div tags.
+
+        /!\ NOTE TO SELF: When continuing this project outside this assignment, replace the div tags with section tags. /!\
+      -->
       <div id="nations">
-        <!-- Heading for the list that shows the different nations in Treaty 1 -->
+        <!-- Heading for the list that shows the different nations in Treaty 1. -->
         <h2>Nations Involved</h2>
-        <!-- Unordered list that shows the different nations in Treaty 1 -->
+        <!-- 
+          Unordered list that shows the different nations in Treaty 1.
+
+          Span is used to style specific sections of text. In this case, it bolds and italicizes the names of the nations.
+        -->
         <ul>
           <li><span>Peguis</span> First Nation</li>
           <li><span>Sagkeeng</span> First Nation</li>
@@ -106,11 +112,11 @@
 
       <br />
 
-      <!-- The footer tags contain the header for my sources, and my sources for this webpage -->
+      <!-- The footer tags contain the header for my sources, and my sources for this webpage. -->
       <footer>
-        <!-- Heading for the list that shows my different sources -->
+        <!-- Heading for the list that shows my different sources. -->
         <h3>Sources</h3>
-        <!-- Unordered list that shows my different sources -->
+        <!-- Unordered list that shows my different sources. -->
         <ul>
           <li>
             <a href="https://treaty1.ca/">Treaty 1's Official Website</a>
