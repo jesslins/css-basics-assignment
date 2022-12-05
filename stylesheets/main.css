@@ -1,8 +1,46 @@
+/*
+  Neutral Colours:
+    #f3e7dc (background) - very light (almost white) orange/beige
+    #5c3d2e (main text) - brown
+  
+  Primary Colour:
+    #f0aa70 (nav bar, important info)- orange
+
+  Secondary Colour:
+    #453028 (headings) - dark brown
+
+  Explanation:
+    I chose orange and brown as the main colours of the website because
+    orange represents balance, and brown represents security and a down
+    to earth nature.
+*/
+
+/*
+  This will style all elements to have line spacing 
+  of 140% of the font size of the element.
+
+  -Mr. Hardman
+*/
+* {
+  line-height: 140%;
+}
+
+/*
+  This will style the html element (also known as the 
+  root element) to have a default font size of 62.5% 
+  of the default font size for the browser
+
+  -Mr. Hardman
+*/
+html {
+  font-size: 62.5%;
+}
+
 /* 
   Styles anything within the body tags.
 
-  background-color: #f2e8df; sets the background color of the webpage to a 
-  light beige.
+  background-color: #f3e7dc; sets the background color of the webpage to a 
+  light beige/orange.
 
   margin: 0; gets rid of the outside margin, allowing the content to spread 
   across the entire webpage.
@@ -12,7 +50,7 @@
   default sans-serif font built into the browser is used.
 */
 body {
-  background-color: #f2e8df;
+  background-color: #f3e7dc;
   margin: 0;
   font-family: Geneva, Tahoma, sans-serif;
 }
@@ -23,14 +61,32 @@ body {
   padding: 0; makes the space between the content and the border smaller.
 
   text-align: center; makes any text centered on the webpage.
-
-  color: #6e4d45; sets the font color to a dark brown.
 */
 header {
   padding: 0;
   text-align: center;
-  color: #6e4d45;
 }
+
+/*
+
+  Styles anything with a class of heading.
+
+  color: #453028; sets the color of the text to a darker brown than the main text.
+*/
+.heading {
+  color: #453028;
+}
+
+/*
+  Styles anything within the h1 tags.
+
+  font-size: 3.6rem; sets the size of the text to 3.6 rem, or 24px in the
+  case of this website.
+*/
+h1 {
+  font-size: 3.6rem;
+}
+
 /*
   Styles anything within the ul tags within the header tags.
 
@@ -41,104 +97,133 @@ header {
   overflow: hidden; clips any content that overflows the element's box. 
   This gives it the rectangle surrounding the list items/navigation tabs.
 
-  background-color: #d98673; makes the bar a rosy color.
+  background-color: #f0aa70; makes the bar orange.
 */
-header ul {
+nav ul {
   list-style-type: none;
   padding: 0;
   overflow: hidden;
-  background-color: #d98673;
+  background-color: #f0aa70;
 }
 
 /*
-  Styles anything within the li tags within the header tags.
+  Styles anything within the li tags within the nav tags.
 
   float: left; makes all of the navigation tabs go to the left, instead of 
   being centered.
 */
-header li {
+nav li {
   float: left;
 }
 
 /*
-  Styles anything within the a tags within the li tags within the header tags.
+  Styles anything within the a tags within the a tags within the nav tags.
 
   display: block; displays elements as block elements.
 
-  color: #6e4d45; sets the font color to a dark brown.
+  color: #5c3d2e; sets the font color to a dark brown.
 
-  padding: 16px; makes the space between the content and the border larger.
+  padding: 1.6rem; makes the space between the content and the border larger.
 
   text-decoration: none; gets rid of the underline on the anchor tags.
+
+  font-size: 1.6rem; sets the size of the text to 1.6 rem, or 16px in the
+  case of this website.
 */
-header li a {
+nav a {
   display: block;
-  color: #6e4d45;
-  padding: 16px;
+  color: #5c3d2e;
+  padding: 1.6rem;
   text-decoration: none;
+  font-size: 1.6rem;
 }
 
 /*
-  Styles anything within the a tags within the li tags within the header tags.
+  Styles anything within the a tags within the nav tags.
 
-  This is only active when the mouse hovers over one of the anchors.
+  This is only active when the mouse hovers over one of the anchors, or when
+  the element is being focused on (like when it's selected using tab).
 
-  background-color: #d67964; sets the background color to a darker pink/rose.
+  background-color: #f59d56; sets the background color to a darker orange.
 
   text-decoration: underline; puts an underline under the texts.
 */
-header li a:hover {
-  background-color: #d67964;
+nav a:hover,
+nav a:focus {
+  background-color: #f59d56;
   text-decoration: underline;
 }
 
 /*
   Styles anything within the main tags.
 
-  margin: 8px; makes the space between the content and the edge of the
+  margin: 0.8rem; makes the space between the content and the edge of the
   webpage larger.
 
-  color: #6e4d45; sets the font color to a dark brown.
+  color: #5c3d2e; sets the font color to a dark brown.
 */
 main {
-  margin: 8px;
-  color: #6e4d45;
+  margin: 0.8rem;
+  color: #5c3d2e;
 }
 
 /*
-  Styles anything with an id of "nations".
+  Styles anything within the h2 tags.
 
-  padding-left: 20px; makes the space between the content and the border larger.
-
-  padding-top: 1px; makes the space between the content and the border larger.
-
-  padding-bottom: 1px; makes the space between the content and the border larger.
-
-  background-color: #e7d4c3; sets the background color to a darker beige.
+  font-size: 2.2rem; sets the size of the text to 2.2 rem, or 22px in the
+  case of this website.
 */
-#nations {
-  padding-left: 20px;
-  padding-top: 1px;
-  padding-bottom: 1px;
+h2 {
+  font-size: 2.2rem;
+}
+
+/*
+  Styles anything within the h3 tags.
+
+  font-size: 2rem; sets the size of the text to 2 rem, or 20px in the
+  case of this website.
+*/
+h3 {
+  font-size: 2rem;
+}
+
+/*
+  Styles anything within the h2 tags, or the ul tags.
+  font-size: 1.6rem; sets the size of the text to 1.6 rem, or 16px in the
+  case of this website.
+*/
+p,
+ul {
+  font-size: 1.6rem;
+}
+
+/*
+  Styles anything within tags with an id of sources.
+
+  padding-left: 2rem; makes the space between the content and the border larger.
+
+  padding-bottom: 2rem; makes the space between the content and the border larger.
+
+  padding-top: 0.1rem; makes the space between the content and the border larger.
+
+  background-color: #ffcca3; sets the background color to a darker beige than the
+  main background.
+*/
+#sources {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 0.1rem;
   background-color: #e7d4c3;
 }
 
 /*
-  Styles anything within the footer tags within the body tags.
+  Styles anything within the h3 tags.
 
-  padding-left: 20px; makes the space between the content and the border larger.
-
-  padding-bottom: 20px; makes the space between the content and the border larger.
-
-  padding-top: 1px; makes the space between the content and the border larger.
-
-  background-color: #e9ac9f; sets the background color to a lighter pink/rose than the nav bar.
+  font-size: 1.8rem; sets the size of the text to 1.8 rem, or 18px in the
+  case of this website.
 */
-body footer {
-  padding-left: 20px;
-  padding-bottom: 20px;
-  padding-top: 1px;
-  background-color: #e9ac9f;
+h4 {
+  font-size: 1.8rem;
 }
 
 /*
@@ -147,5 +232,17 @@ body footer {
   color: #8d5c50; sets the font color to a dark brown.
 */
 a {
-  color: #8d5c50;
+  color: #614c3f;
+}
+
+/*
+  Styles anything within the tags with an id of sources.
+
+  This is only active when the user has already access this link.
+
+  color: #755947; sets the font color to a lighter brown than the original
+  text colour.
+*/
+.sources a:visited {
+  color: #755947;
 }

@@ -3,7 +3,7 @@
 • Course: Software Development 20S
 • Teacher: Mr. Hardman
 • School: Pembina Trails Early College
-• Date Last Modified: 11/10/2022
+• Date Last Modified: 12/05/2022
 -->
 
 <!DOCTYPE html>
@@ -18,7 +18,7 @@
     <!-- Internal stylesheet for styling that is specific to this webpage. -->
     <style>
       /* Inverts the colors on pictures with the "inverted" class. */
-      .inverted {
+      #inverted {
         filter: invert();
       }
 
@@ -27,12 +27,31 @@
         font-weight: bold;
         font-style: italic;
       }
+
+      /*
+        Styles section with an id of "nations".
+
+        padding-left: 20px; makes the space between the content and the border larger.
+
+        padding-top: 1px; makes the space between the content and the border larger.
+
+        padding-bottom: 1px; makes the space between the content and the border larger.
+
+        background-color: #e7d4c3; sets the background color to a lighter orange than
+        the nav bar.
+      */
+      #nations {
+        padding-left: 2rem;
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+        background-color: #ffcca3;
+      }
     </style>
   </head>
   <body>
     <!-- The header tags contain the main heading and the navigation bar. -->
     <header>
-      <h1>Treaty 1</h1>
+      <h1 class="heading">Treaty 1</h1>
       <!-- Navigation bar to navigate to every webpage of my site. -->
       <nav>
         <!--
@@ -43,6 +62,9 @@
           <!-- Anchor tag for the home page. -->
           <li>
             <a href="index.html">Home Page</a>
+          </li>
+          <li>
+            <a href="history.html">History of Treaty 1</a>
           </li>
         </ul>
       </nav>
@@ -57,7 +79,7 @@
         Heading for the paragraph where I give an overview on the history of
         Treaty 1.
       -->
-      <h2>About Treaty 1</h2>
+      <h2 class="heading">About Treaty 1</h2>
       <!-- Paragraph giving an overview on the history of Treaty 1. -->
       <p>
         At Lower Fort Garry, Treaty No. 1 was negotiated and signed in August
@@ -66,34 +88,12 @@
         Nehiyaw (Cree).
       </p>
 
-      <!-- Heading for the two maps that show Treaty areas. -->
-      <h2>Treaty Maps</h2>
-      <img
-        src="images/1200px-Numbered-Treaties-Map.png"
-        width="40%"
-        alt="An image of a map of Canada, with shaded sections signifying the Treaty areas"
-      />
-      <img
-        src="images/Treaty_1_Territory.png"
-        width="27.5%"
-        class="inverted"
-        alt="An image of a map of Canada, zoomed into the lower area of Manitoba, partially 
-          shaded to signify the Treaty 1 area"
-      />
-
-      <br />
-      <br />
-
       <!--
-        These div tags contain the heading for a list, and a list that shows the different nations in this Treaty.
-
-        They should really be section tags, but div was a requirement in this assignment, and I had no other place to put div tags.
-
-        /!\ NOTE TO SELF: When continuing this project outside this assignment, replace the div tags with section tags. /!\
+        These section tags contain the heading for a list, and a list that shows the different nations in this Treaty.
       -->
-      <div id="nations">
+      <section id="nations">
         <!-- Heading for the list that shows the different nations in Treaty 1. -->
-        <h2>Nations Involved</h2>
+        <h3 class="heading">Nations Involved</h3>
         <!-- 
           Unordered list that shows the different nations in Treaty 1.
 
@@ -108,20 +108,41 @@
           <li><span>Sandy Bay Ojibway</span> First Nation</li>
           <li><span>Swan Lake</span> First Nation</li>
         </ul>
-      </div>
+      </section>
+
+      <!-- Heading for the two maps that show Treaty areas. -->
+      <h3 class="heading">Treaty Maps</h3>
+      <img
+        src="images/1200px-Numbered-Treaties-Map.png"
+        width="40%"
+        alt="An image of a map of Canada, with shaded sections signifying the Treaty areas"
+      />
+      <img
+        src="images/Treaty_1_Territory.png"
+        width="27.5%"
+        id="inverted"
+        alt="An image of a map of Canada, zoomed into the lower area of Manitoba, partially 
+          shaded to signify the Treaty 1 area"
+      />
 
       <br />
+      <br />
 
-      <!-- The footer tags contain the header for my sources, and my sources for this webpage. -->
-      <footer>
+      <!-- These section tags contain the header for my sources, and my sources for this webpage. -->
+      <section id="sources">
         <!-- Heading for the list that shows my different sources. -->
-        <h3>Sources</h3>
+        <h4 class="heading">Sources</h4>
         <!-- Unordered list that shows my different sources. -->
         <ul>
           <li>
             <a href="https://treaty1.ca/">Treaty 1's Official Website</a>
           </li>
         </ul>
+      </section>
+
+      <!-- The footer tags contain the website's copyright information -->
+      <footer>
+        <p><small>© Jessie Linsangan</small></p>
       </footer>
     </main>
   </body>
